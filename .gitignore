@@ -1,0 +1,18 @@
+[Libraries]
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+MemoryCaptures/
+
+# IDE 관련
+*.csproj
+*.sln
+*.user
+.vscode/
+
+# OS 관련
+.DS_Store
+Thumbs.db
