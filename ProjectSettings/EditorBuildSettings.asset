@@ -23,6 +23,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/phone.unity
     guid: 45ceebacd258a204b85937f655daad1b
+  - enabled: 1
+    path: Assets/Scenes/list.unity
+    guid: 6973b3176a24e8c4c937677d8a08b393
+  - enabled: 1
+    path: Assets/Scenes/minigamestart.unity
+    guid: 500f3a0ac7decc9448f0b6fdb3650ca8
+  - enabled: 1
+    path: Assets/Scenes/minigame.unity
+    guid: abf75b69bfccfbb40921124ddd400dec
+  - enabled: 1
+    path: Assets/Scenes/last.unity
+    guid: f0ebb52d8e9aff141be41a966fe08479
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

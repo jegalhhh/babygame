@@ -13,10 +13,7 @@ public class TutorialShow : MonoBehaviour
             balloons[i].SetActive(false);
         }
 
-        if (balloons.Length > 0)
-        {
-            balloons[0].SetActive(true);  // 첫 번째 말풍선 자동 등장
-        }
+       
     }
 
     void Update()
@@ -29,17 +26,23 @@ public class TutorialShow : MonoBehaviour
 
     void ShowNextBalloon()
     {
-        if (step < balloons.Length - 1)
+        if (step == 0)
         {
-            balloons[step].SetActive(false);    // 현재 말풍선 꺼주고
-            step++;                              // 다음 인덱스로 이동
-            balloons[step].SetActive(true);     // 다음 말풍선 바로 보여줌
+            balloons[step].SetActive(true);
+            step++;
         }
-        else if (step == balloons.Length - 1)
+        
+        else if (step < balloons.Length)
+        {
+            balloons[step].SetActive(true);    // 현재 말풍선 꺼주고
+            balloons[step - 1].SetActive(false);     // 다음 말풍선 바로 보여줌
+            step++;
+        }
+        else if (step == balloons.Length)
         {
             // 마지막 말풍선 끄기
-            balloons[step].SetActive(false);
-            step++;
+            balloons[step-1].SetActive(false);
+           
         }
     }
 }
